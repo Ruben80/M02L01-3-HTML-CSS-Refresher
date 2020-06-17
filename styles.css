@@ -1,50 +1,124 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    /*  background: lightgray; */
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0.5);
-    display: flex;    
+main {
+  display: flex;
+  align-items: flex-start;
+  font: arial;
+  font-size: 18px;
 }
 
-.box:hover {
-    box-shadow: 0 15px 30px rgba(0,0,0.5);
+article {
+  border: 1.5px solid lightgrey;
+  border-radius: 10px;
+  width: 386px;
+  margin: 15px;
+  box-shadow: 1px 1px 2px lightgrey;
+}
+
+article div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.card-subtitle {
+  color: grey;
+}
+
+.card-buttons {
+  justify-content: center;
+  border-top: 0.5px solid lightgrey;
+  margin-left: 0;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-subtitle {
+  margin-bottom: 20px;
+}
+
+.card-avatar {
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+}
+
+.card-body {
+  margin-bottom: 20px;
+  height: 80px;
+}
+
+button {
+  width: 172px;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: 600;
+  background-color: white;
+}
+
+.green-button {
+    border-left: 1.5px solid limegreen;
+    border-top: 1.5px solid limegreen;
+    border-bottom: 1.5px solid limegreen;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: limegreen;
+  }
+
+  .red-button {
+    border: 1.5px solid red;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: red;
+  }
+
+/* .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0.5);
+  display: flex;
+} */
+
+/* .box:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0.5);
 }
 
 .box .imgBox {
-    width: 150px;
-    flex: 0 0 150px;
+  width: 150px;
+  flex: 0 0 150px;
 }
 
 .box .imgBox img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .box .content {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-.box .content h2{
-    margin: 0;
-    padding-left: 0px;
-    color: lightgray;
-    font-size: 22px;
+.box .content h2 {
+  margin: 0;
+  padding-left: 0px;
+  color: lightgray;
+  font-size: 22px;
 }
 
-.box .content p{
-    margin: 0;
-    padding: 10px 0 0 ;
-    text-align: justify;
-}
+.box .content p {
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: justify;
+} */
