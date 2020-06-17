@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 1rem;
+}
+
+/* Just for the fallback layout */
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+article {
+  margin: 1rem 0;
+}
+
+/* Now lets do a Grid-based layout */
+
+@supports (display: grid) {
+  main {
+    max-width: 10000px;
+    margin: 0;
+  }
+  article {
+    margin: 0;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+}
+
+.cards {
+  font-family: Avenir, Roboto, Helvetica, san-serif;
+  font-size: 80%;
+}
+.contact {
+  display: flex;
+  flex-flow: column;
+  border: 2px solid lightgray;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.contact > h1 {
+  margin: 1rem 0rem 0;
+  width: 100px;
+}
+.contact > h2 {
+  margin: 1rem 0rem 0;
+  width: 100px;
+}
+
+.contact > p {
+  margin: 1.25em 0rem 1rem;
+  width: 100px;
+}
+.contact > img {
+  order: 0;
+  align-self: center;
+  width: 100px;
+  height: 100px;
+
+  float: right;
+  margin: 0.5em 0 1em 1em;
+  border: 1px solid #999;
+  clear: right;
+}
+
+.contact > button {
+  margin-top: auto;
+  background: teal;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
